@@ -1,66 +1,52 @@
-# Resources settings
-source:      .
-layouts:     ./_layouts
-timezone:    Asia/Hongkong
+title: Wendell Thomas
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/monday" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: ':title/'
+blog_theme: dark # Or use dark
 
-# Site settings
-email: 1540294142@qq.com
-author: Joytou Wu
-owner_name: Joytou Wu
-github_username: joytou
-repo: JOYTOU
+# Profile information
+name: Wendell Thomas
+tagline: Full Stack Developer
+about-description: # Add Discription
+pic: 79.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
 
-#Server
-url: http://joytou.nets.hk
-github: https://github.com/joytou/
-coding: https://coding.net/joytou/
-baseurl: ""
+# Contact links
+email: artemsheludko@tuta.io # Add your Email address
+phone: 044 825 5523 # Add your Phone number
+website: artemsheludko.pw # Add your website, do not add http://
+linkedin: # Add your Linkedin handle
+github: artemsheludko # Add your Github handle
+twitter: '@artemsheludko_' # Add your Twitter handle
 
-#Page settings
-future: true
-show_drafts: nil
-lsi: true
-published: false
-safe: false
-permalink: /:year/:month/:day/:title/
-markdown: kramdown
-excerpt_separator: '<!-- more -->'
+# Tracker
+analytics:
 
-exclude: ['README.md','Manifest.md']
-include: ['robots.txt']
+# Comments
+discus-identifier: # Add your Disqus identifier
 
-# Description
-description: "只为博客而生，也因为博客而存在。Not only for the existence of the blog, but also because of the existence of the blog."
-# Keywords
-keywords:
-        - "github"
-        - "bootstrap"
-        - "blog"
-        - "joytou"
-        - "markdown"
-        - "jekyll"
-        - "博客"
-        - "个人博客"
-        - "博客模板"
-        
-#Update configuration
-versioncode: 1
-        #The current versioncode.
-versionname: "1.0.1"
-        #The current versionname.
-remind: true
-        #Whether to remind you to upgrade the latest version when there is the latest version.
+# Important settings
+assets:
+  sources:
+    - assets/fonts
+    - assets/img
+    - assets/js
+    - assets/stylesheets
 
-#Others
-#Baidu
-BaiduSiteVerification: "eb6Z6IT34b"
-#51La
-51la: "19258191"
-51lamb: "1"
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
 
-coding_comments:
-  owner: 'wusisu'
-  repo: 'wusisu'
-  oauth:
-    client_id: '624713aab28c44e0555b0e8d5d18dece'
-    client_secret: '5d2d45460648bfbd3b9f77bead1a0ac6aa7c3c95'
+gems:
+  - jekyll-feed
+  - jekyll-assets
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+include: [_pages]
